@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presentación de la App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            background-color: #555;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            margin-bottom: 0;
+        }
+
+        main {
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #000;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            max-width: 200px;
+            margin: 10px;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .card:hover {
+            background-color: #555;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .card-caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .logo {
+            max-width: 100px;
+            margin-right: 20px;
+            background-color: #555;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        .download-btn {
+            background-color: #1a3b5d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .download-btn:hover {
+            background-color: #26547c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>scanattend pro</h1>
+        <img src="appmovilFinal/img/Captura de pantalla 2023-12-09 093410.png" alt="Logo" class="logo">
+    </header>
+    <main>
+        <div class="card-container">
+            <div class="card">
+                <img src="img/inicio.png" alt="Imagen 1">
+                <p class="card-caption">Inicio de sesión</p>
+            </div>
+            <div class="card">
+                <img src="img/registro.png" alt="Imagen 2">
+                <p class="card-caption">Registro de usuario</p>
+            </div>
+            <div class="card">
+                <img src="img/inicioExitoso.png" alt="Imagen 3">
+                <p class="card-caption">Inicio de sesión exitoso</p>
+            </div>
+            <div class="card">
+                <img src="img/historial.png" alt="Imagen 4">
+                <p class="card-caption">Historial de asistencias a clases</p>
+            </div>
+            <div class="card">
+                <img src="img/QR.png" alt="Imagen 5">
+                <p class="card-caption">Lector de QR</p>
+            </div>
+            <div class="card">
+                <img src="img/presente.png" alt="Imagen 6">
+                <p class="card-caption">Asistencia exitosa</p>
+            </div>
+            <div class="card">
+                <img src="img/reestablecer.png" alt="Imagen 7">
+                <p class="card-caption">Restablecer contraseña</p>
+            </div>
+        </div>
+        <a href="ruta_apk/app.apk" class="download-btn">Descargar APK</a>
+    </main>
+</body>
+</html>
